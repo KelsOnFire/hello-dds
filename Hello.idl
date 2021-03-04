@@ -1,0 +1,7 @@
+module HelloModule {
+    @topic
+    struct Hello {
+        string country;
+        string text;
+    };
+};
