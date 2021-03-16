@@ -4,4 +4,10 @@ module HelloModule {
         string country;
         string text;
     };
+
+    @topic
+    struct Joke {
+        string country;
+        string text;
+    };
 };

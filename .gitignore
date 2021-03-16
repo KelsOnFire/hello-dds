@@ -1,0 +1,10 @@
+HelloC.*
+HelloS.*
+HelloTypeSupport*
+.depend*
+GNUmakefile*
+*.ior
+.obj/
+publisher
+subscriber
+*.ini

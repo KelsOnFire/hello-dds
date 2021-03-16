@@ -1,4 +1,4 @@
-#include <ace/Log_Msg.h>
+//#include <ace/Log_Msg.h>
 
 #include <dds/DdsDcpsInfrastructureC.h>
 #include <dds/DdsDcpsSubscriptionC.h>
@@ -14,7 +14,7 @@
 #endif
 
 #include "DataReaderListenerImpl.h"
-#include "HelloModuleTypeSupportImpl.h"
+#include "HelloTypeSupportImpl.h"
 
 
 int ACE_TMAIN(int argc, ACE_TCHAR *argv[]){
@@ -50,6 +50,9 @@ int ACE_TMAIN(int argc, ACE_TCHAR *argv[]){
 
     // Create Topic (Movie Discussion List)
     CORBA::String_var type_name = ts->get_type_name();
+    
+    std::cout << type_name << std::endl;
+
     DDS::Topic_var topic =
       participant->create_topic("Hello World",
                                 type_name,

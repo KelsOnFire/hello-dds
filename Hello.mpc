@@ -15,6 +15,7 @@ project(*Publisher) : dcpsexe_with_tcp {
   }
 
   Source_Files {
+    LazyDDS.cpp
     Publisher.cpp
   }
 }
